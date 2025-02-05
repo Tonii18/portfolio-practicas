@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Sobre Mí</title>
+</head>
+<body>
+    
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>¡Bienvenido!</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">Sobre mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Parallax -->
+    <section class="parallax" id="home">
+        <div class="parallax-image"></div>
+        <div class="parallax-content">
+            <h2>Sobre Mí</h2>
+        </div>
+    </section>
+
+    <!-- Resto de secciones -->
+
+    <!-- Seccion 'sobre mi'-->
+    <section class="about-me">
+        <h2 class="about-title">Sobre Mí</h2>
+        <div class="about-container">
+            <img src="/images/avatar.png" alt="Mi Foto" class="about-image">
+            <p class="about-text">
+                ¡Hola! Soy Antonio, un apasionado del desarrollo web y el diseño. Empecé a hacer mis primeros proyectos en HTML hace unos 3 años,
+                y desde entonces no he parado de aprender. Mi punto fuerte es el desarrollo de aplicaciones con Java, pero puedo moverme a través
+                de diferentes tecnologías. <br> <br> Actualmente estoy estudiando el CFGS de Desarrollo de Aplicaciones Multiplataforma, y aun que no tengo experiencia 
+                empresarial, si que he participado en numerosos proyectos, tanto personales como colectivos. 
+                <br> <br> Además, tengo un canal de Youtube donde quiero trasladaros todo mi conocimiento para ayudaros 
+                en este fantástico mundo. Sígueme!
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Seccion 'Tencologias que sé' -->
+    <section class="technologies">
+        <h2 class="technologies-title">Tecnologías que sé</h2>
+        <div class="technologies-container">
+            <!-- Gráfico Circular -->
+            <canvas id="techChart"></canvas>
+    
+            <!-- Leyenda -->
+            <div class="technologies-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #f39c12;"></div>
+                    <span>Java</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2980b9;"></div>
+                    <span>HTML</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2ecc71;"></div>
+                    <span>CSS</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #9b59b6;"></div>
+                    <span>Java</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #ff0055;"></div>
+                    <span>Typescript</span>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <hr>
+
+    <!-- Sección 'Mis Proyectos' -->
+    <section class="projects">
+        <h2 class="projects-title">Mis mejores Proyectos</h2>
+        <div class="projects-container">
+
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <img src="images/bankPNG.png" alt="Icono del proyecto" class="project-icon">
+                    <h3 class="project-title">Aplicacion Bancaria</h3>
+                    <a href="https://github.com/Tonii18/BankApp.git" target="_blank" class="github-link">Ver en GitHub</a>
+                    <div class="toggle-icon">&#x25BC;</div> <!-- Flecha hacia abajo -->
+                </div>
+                <div class="project-description">
+                    <p>Pequeña aplicacion que simula el funcionamiento de una App bancaria con todas sus funcionalidades.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <img src="images/passGenerator.png" alt="Icono del proyecto" class="project-icon">
+                    <h3 class="project-title">Generador de contraseñas</h3>
+                    <a href="https://github.com/Tonii18/PasswordGenerator.git" target="_blank" class="github-link">Ver en GitHub</a>
+                    <div class="toggle-icon">&#x25BC;</div>
+                </div>
+                <div class="project-description">
+                    <p>Generador de contraseñas seguras.Puedes elegir longitud y que caracteres incluir. Ademas, puedes guardar 
+                        tus contraseñas en la misma aplicacion para tenerlas siempre a mano.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <img src="images/docs.png" alt="Icono del proyecto" class="project-icon">
+                    <h3 class="project-title">Procesador de texto</h3>
+                    <a href="https://github.com/Tonii18/TextEditor.git" target="_blank" class="github-link">Ver en GitHub</a>
+                    <div class="toggle-icon">&#x25BC;</div>
+                </div>
+                <div class="project-description">
+                    <p>Versión casera pero muy realista del procesador de texto Microsoft Word, con todas sus funcionalidades basicas.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Seccion 'Mi canal de youtube' -->
+    <section class="youtube-section">
+        <h2 class="youtube-title">Mi Canal de YouTube</h2>
+        <div class="youtube-videos-container">
+            <!-- Video 1 -->
+            <div class="youtube-video">
+                <img src="" alt="Miniatura Video 1" class="video-thumbnail" id="video-thumbnail-1">
+                <h3 class="video-title" id="video-title-1"></h3>
+                <a href="#" class="video-link" target="_blank" id="video-link-1">Ver</a>
+            </div>
+    
+            <!-- Video 2 -->
+            <div class="youtube-video">
+                <img src="" alt="Miniatura Video 2" class="video-thumbnail" id="video-thumbnail-2">
+                <h3 class="video-title" id="video-title-2"></h3>
+                <a href="#" class="video-link" target="_blank" id="video-link-2">Ver</a>
+            </div>
+    
+            <!-- Video 3 -->
+            <div class="youtube-video">
+                <img src="" alt="Miniatura Video 3" class="video-thumbnail" id="video-thumbnail-3">
+                <h3 class="video-title" id="video-title-3"></h3>
+                <a href="#" class="video-link" target="_blank" id="video-link-3">Ver</a>
+            </div>
+        </div>
+
+        <p class="description">Visita los vídeos más vistos de mi canal</p>
+    
+        <!-- Número de suscriptores en tiempo real -->
+        <div class="subscribers-count-container">
+            <h2 id="subscribers-count">0</h2>
+            <p class="subscribers-text">Suscriptores</p>
+        </div>
+    
+        <!-- Botón para volver al inicio -->
+        <div class="back-to-top">
+            <a href="/about" class="btn-back-to-top">
+                <i class="fas fa-arrow-up"></i> Volver arriba
+            </a>
+        </div>
+    </section>
+    
+
+
+    <script src="about.js"></script>
+
+</body>
+</html>

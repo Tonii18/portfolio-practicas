@@ -13,3 +13,5 @@ function handleScroll() {
 // Escuchar el evento de scroll
 window.addEventListener('scroll', handleScroll);
 
+// Despliegue de menu horizontal
+

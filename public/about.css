@@ -1,0 +1,461 @@
+/* Resetear estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo de la barra de navegación */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 18, 32, 1.0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Parallax */
+.parallax {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    color: white;
+    text-align: center;  
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Imagen de fondo */
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -2;
+}
+
+/* Capa de overlay */
+.parallax::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* Contenido del parallax */
+.parallax-content {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.parallax-content h2 {
+    font-weight: 900;
+    font-size: 80px;
+    margin: 0;
+}
+
+
+/* Sección Sobre Mí */
+.about-me {
+    background-color: rgba(0, 18, 32, 1.0);
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.about-title {
+    font-size: 40px;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(217, 217, 217);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    text-align: left;
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.about-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 18, 32, 1.0);
+    line-height: 1.6;
+}
+
+hr{
+    border-color: #00FF5E;
+}
+
+/* Seccion de 'Tecnologias que se' */
+.technologies {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: rgba(0, 18, 32, 1.0);
+    color: white;
+}
+
+.technologies-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.technologies-container {
+    background-color: rgba(32, 41, 56);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.technologies-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+canvas {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Seccion de 'Mis proyectos' */
+.projects {
+    background-color: #001220;
+    padding: 80px 10%;
+    color: white;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card {
+    background-color: rgb(32, 41, 56);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-header {
+    position: relative;
+}
+
+.project-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.github-link {
+    font-size: 14px;
+    color: #00FF5E;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.project-description {
+    display: none;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+/* Seccion de 'Mi canal de youtube' */
+/* Estilos para la sección del canal de YouTube */
+.youtube-section {
+    background-color: #001220;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.youtube-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.youtube-videos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.youtube-video {
+    background-color: rgb(32, 41, 56);
+    color: #001220;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.youtube-video:hover {
+    transform: translateY(-10px);
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.video-title {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.video-link {
+    font-size: 14px;
+    color: #00FF5E;
+    text-decoration: none;
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
+
+.description{
+    margin-top: 40px;
+}
+
+.subscribers-count-container {
+    margin-top: 40px;
+    background-color: rgb(32, 41, 56);        
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#subscribers-count {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.subscribers-text {
+    font-size: 20px;
+    color: white;
+}
+
+/* Estilo del botón para volver arriba */
+.back-to-top {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-back-to-top {
+    font-size: 18px;
+    color: white;
+    background-color: #00FF5E;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back-to-top:hover {
+    background-color: #444;
+}
+
+.btn-back-to-top i {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .parallax-content h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .parallax-content h2 {
+        font-size: 40px;
+    }
+}
+
+/* Responsive design para la seccion sobre mi*/
+/* Responsive */
+@media (max-width: 768px) {
+    .about-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-image {
+        margin: 0 auto 15px;
+    }
+}
+
+/* Responsive design para la seccion 'tecnologias' */
+
+/* Responsive design para la seccion 'Mis proyectos */
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 30px;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+} 
+
+/* Responsive design para la seccion 'Mi canal de youtube'*/
+/* Media Queries para hacerlo responsive */
+@media (max-width: 768px) {
+    .youtube-videos-container {
+        justify-content: center;
+    }
+
+    .youtube-video {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .youtube-title {
+        font-size: 30px;
+    }
+
+    .youtube-video {
+        width: 90%;
+    }
+}
