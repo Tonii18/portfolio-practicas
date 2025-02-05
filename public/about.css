@@ -407,7 +407,6 @@ canvas {
 }
 
 /* Responsive design para la seccion sobre mi*/
-/* Responsive */
 @media (max-width: 768px) {
     .about-title {
         width: 100%;
@@ -439,7 +438,6 @@ canvas {
 } 
 
 /* Responsive design para la seccion 'Mi canal de youtube'*/
-/* Media Queries para hacerlo responsive */
 @media (max-width: 768px) {
     .youtube-videos-container {
         justify-content: center;
