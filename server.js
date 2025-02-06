@@ -22,3 +22,8 @@ app.get("/about", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "about.html"))
 });
 
+// Ruta de la seccion 'contacto'
+app.get("/contact", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "contact.html"))
+});
+

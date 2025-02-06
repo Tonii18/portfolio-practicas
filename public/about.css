@@ -58,15 +58,14 @@ body {
     position: relative;
     height: 100vh;
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
+    justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;  
     overflow: hidden;
     padding: 20px;
 }
 
-/* Imagen de fondo */
 .parallax-image {
     position: absolute;
     top: 0;
@@ -81,7 +80,6 @@ body {
     z-index: -2;
 }
 
-/* Capa de overlay */
 .parallax::before {
     content: ''; 
     position: absolute;
@@ -93,7 +91,6 @@ body {
     z-index: -1;
 }
 
-/* Contenido del parallax */
 .parallax-content {
     z-index: 1;
     position: relative;
@@ -281,7 +278,6 @@ canvas {
 }
 
 /* Seccion de 'Mi canal de youtube' */
-/* Estilos para la sección del canal de YouTube */
 .youtube-section {
     background-color: #001220;
     color: white;
